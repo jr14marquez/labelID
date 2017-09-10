@@ -60,7 +60,10 @@ export default {
 
 .navView{
   padding-top:8px;
-  
+}
+
+nav{
+  margin-bottom:8px;
 }
 
 </style>
