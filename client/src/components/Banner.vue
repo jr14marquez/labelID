@@ -19,7 +19,7 @@ export default {
 
 .bannerView{
 	text-align: center;	
-	background-color:yellow;
+	background-color:green;
 	color:black;
   width:100%;
   height:20px;
