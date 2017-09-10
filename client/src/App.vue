@@ -3,11 +3,11 @@
     <banner-app></banner-app>
     <nav-app></nav-app>
     <div class="container-fluid">
-      <div class="col-md-8">
+      <div class="col-md-8 left">
         <map-app></map-app>
       </div>
-      <div class="col-md-4">
-        <map-app></map-app>
+      <div class="col-md-4 right">
+        <list-nav-app></list-nav-app>
       </div>
     </div>
     <router-view></router-view>
@@ -18,6 +18,7 @@
 import NavApp from './components/Nav';
 import BannerApp from './components/Banner';
 import MapApp from './components/Map';
+import ListNavApp from './components/ListNav';
 
 export default {
   name: 'app',
@@ -30,6 +31,7 @@ export default {
     NavApp,
     BannerApp,
     MapApp,
+    ListNavApp,
   },
 };
 </script>
@@ -40,6 +42,14 @@ html,body{
   height:100%;
   widht:100%;
   background-color:#2c3339;
+}
+
+.left{
+  padding-left:0px;
+}
+
+.right{
+  padding-right:0px;
 }
 
 #app {
