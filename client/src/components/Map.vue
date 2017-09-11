@@ -49,6 +49,7 @@ export default {
 #map {
     border-radius: 10px;
     overflow: hidden;
+    height:100%;
 }
 
 #map div canvas{
