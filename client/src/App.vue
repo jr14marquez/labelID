@@ -1,15 +1,25 @@
 <template>
   <div id="app-view">
-    <banner-app></banner-app>
+    <nav class="navbar navbar-default navbar-fixed-top banner">
+      <div class="container">
+          <p><b> Unclassified </b></p>
+      </div>
+    </nav>
     <nav-app></nav-app>
     <div class="container-fluid">
-      <div class="col-md-8 left">
+      <div class="col-sm-8 left">
         <map-app></map-app>
       </div>
-      <div class="col-md-4 right">
+      <div class="col-sm-4 right">
         <list-nav-app></list-nav-app>
+        <list-app></list-app>
       </div>
     </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom bottom banner">
+      <div class="container">
+        <p><b> Unclassified </b></p>
+      </div>
+    </nav>
     <router-view></router-view>
   </div>
 </template>
@@ -19,6 +29,7 @@ import NavApp from './components/Nav';
 import BannerApp from './components/Banner';
 import MapApp from './components/Map';
 import ListNavApp from './components/ListNav';
+import ListApp from './components/List';
 
 export default {
   name: 'app',
@@ -32,6 +43,7 @@ export default {
     BannerApp,
     MapApp,
     ListNavApp,
+    ListApp,
   },
 };
 </script>
@@ -44,12 +56,23 @@ html,body{
   background-color:#2c3339;
 }
 
+body{
+  padding-top:25px;
+}
+.banner{
+  min-height:0px;
+  height:25px;
+}
+
 .left{
   padding-left:0px;
+  height:100%;
 }
 
 .right{
   padding-right:0px;
+  padding-left:0px;
+  height:100%;
 }
 
 #app {
@@ -64,6 +87,10 @@ html,body{
 #app-view {
   height:100%;
   width:100%;
+}
+
+.container-fluid{
+  height:87%;
 }
 
 
