@@ -37,7 +37,13 @@ export default {
   },
 };
 </script>
-
+<style scoped>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
+nav{
+  margin-bottom:0px;
+}
+.navbar.navbar-inverse {
+    margin-bottom:5px;
+}
 </style>
